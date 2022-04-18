@@ -74,12 +74,194 @@ body {
     align-items: center;
     color: #ffffff;
     font-family: stratosskyeng-medium;
+    margin-bottom: 5px;
+}
+
+.header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.timer {
+    width: 155px;
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &_minute {
+        display: flex;
+        gap: 30px;
+
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+    }
+    &_seconds {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+    }
+    &_info {
+        font-size: 64px;
+        line-height: 72px;
+        color: #ffffff;
+    }
+}
+
+.game_panel {
+    margin-top: 35px;
+    margin-left: 23px;
+    margin-right: 23px;
+
+    min-width: 930px;
+    min-height: 550px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    width: 95px;
+    height: 133px;
+
+    &_closed {
+        background-image: url("/cards/рубашка.png");
+    }
+
+    &_open_heart {
+        &_A {
+            background-image: url("/cards/туз\ черви.png");
+        }
+        &_K {
+            background-image: url("/cards/король\ черви.png");
+        }
+        &_Q {
+            background-image: url("/cards/дама\ черви.png");
+        }
+        &_J {
+            background-image: url("/cards/валет\ черви.png");
+        }
+        &_10 {
+            background-image: url("/cards/10\ черви.png");
+        }
+        &_9 {
+            background-image: url("/cards/9\ черви.png");
+        }
+        &_8 {
+            background-image: url("/cards/8\ черви.png");
+        }
+        &_7 {
+            background-image: url("/cards/7\ черви.png");
+        }
+        &_6 {
+            background-image: url("/cards/6\ черви.png");
+        }
+    }
+
+    &_open_spades {
+        &_A {
+            background-image: url("/cards/туз\ пики.png");
+        }
+        &_K {
+            background-image: url("/cards/король\ пики.png");
+        }
+        &_Q {
+            background-image: url("/cards/дама\ пики.png");
+        }
+        &_J {
+            background-image: url("/cards/валет\ пики.png");
+        }
+        &_10 {
+            background-image: url("/cards/10\ пики.png");
+        }
+        &_9 {
+            background-image: url("/cards/9\ пики.png");
+        }
+        &_8 {
+            background-image: url("/cards/8\ пики.png");
+        }
+        &_7 {
+            background-image: url("/cards/7\ пики.png");
+        }
+        &_6 {
+            background-image: url("/cards/6\ пики.png");
+        }
+    }
+    &_open_diamonds {
+        &_A {
+            background-image: url("/cards/туз\ бубны.png");
+        }
+        &_K {
+            background-image: url("/cards/король\ бубны.png");
+        }
+        &_Q {
+            background-image: url("/cards/дама\ бубны.png");
+        }
+        &_J {
+            background-image: url("/cards/валет\ бубны.png");
+        }
+        &_10 {
+            background-image: url("/cards/10\ бубны.png");
+        }
+        &_9 {
+            background-image: url("/cards/9\ бубны.png");
+        }
+        &_8 {
+            background-image: url("/cards/8\ бубны.png");
+        }
+        &_7 {
+            background-image: url("/cards/7\ бубны.png");
+        }
+        &_6 {
+            background-image: url("/cards/6\ бубны.png");
+        }
+    }
+
+    &_open_clubs {
+        &_A {
+            background-image: url("/cards/туз\ крести.png");
+        }
+        &_K {
+            background-image: url("/cards/король\ крести.png");
+        }
+        &_Q {
+            background-image: url("/cards/дама\ крести.png");
+        }
+        &_J {
+            background-image: url("/cards/валет\ крести.png");
+        }
+        &_10 {
+            background-image: url("/cards/10\ крести.png");
+        }
+        &_9 {
+            background-image: url("/cards/9\ крести.png");
+        }
+        &_8 {
+            background-image: url("/cards/8\ крести.png");
+        }
+        &_7 {
+            background-image: url("/cards/7\ крести.png");
+        }
+        &_6 {
+            background-image: url("/cards/6\ крести.png");
+        }
+    }
 }
 
 @font-face {
     font-family: "stratosskyeng-medium";
-    src: url("../homework1/statosskyeng-v1.001/Desktop\ fonts/stratosskyeng-medium.otf") format("truetype"); 
+    src: url("../homework1/statosskyeng-v1.001/Desktop\ fonts/stratosskyeng-medium.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-//Не работают шрифты
+//Не работают шрифты, наверное.
